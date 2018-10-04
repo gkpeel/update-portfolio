@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display');
+
+// $color-primary: #69818D;
+// $color-secondary: #40545B;
+// $color-teriatry: #BAB0A5;
+// $color-white: #C6C9D5;
+// $color-black: #182A33;
+
+$color-primary: rgb(23, 104, 151);
+$color-secondary: rgb(55, 124, 64);
+$color-teriatry: rgb(0, 255, 0);
+$color-white: rgb(241, 241, 241);
+$color-black: rgb(19, 7, 7);
+
+$device-sm: '(min-width: 576px)';
+$device-md: '(min-width: 768px)';
+$device-lg: '(min-width: 992px)';
+$device-xl: '(min-width: 1200px)';
+$device-xxl: '(min-width: 1400px)';
+
+html { 
+    background: 
+        linear-gradient(
+            rgba($color-primary, .2),
+            rgba($color-primary, .2)
+        ),
+        url('../images/skyline-background.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-blend-mode: color-burn;
+
+}
+
+body {
+    background-color: transparent;
+    color: $color-black;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-nav {
+    font-family: 'Playfair Display', serif;
+    color: $color-primary;
+}
+
+h2 {
+    margin-bottom: 36px;
+    @media #{$device-xl} {
+        font-size: 3rem;
+    }
+}
+
+p {
+    @media #{$device-xxl} {
+        font-size: 1.25em;
+    }
+}
+
+a {
+    color: $color-primary;
+}
+
+.btn-primary {
+    background-color: $color-primary;
+    border-color: $color-primary;
+}
+.btn-secondary {
+    background-color: $color-secondary;
+    border-color: $color-secondary;
+}
+
+.btn-outline-white {
+    color: $color-white;
+    background-color: transparent;
+    background-image: none;
+    border-color: $color-white;
+    &:hover {
+        background-color: $color-white;
+        color: $color-primary;
+    }
+}
+
+.nav-offset {
+    height: 56px;
+}
+
+#header .main-header, #about-me, #portfolio, #contact {
+    background-color: rgba($color-white, 0.85);
+    @media #{$device-md} {
+        padding: 80px 125px;
+    }
+}
+
+footer {
+    padding: 16px 125px;
+}
+
+#header, #about-me, #portfolio {
+    margin-bottom: 160px;
+}
+
+#header, #about-me, #portfolio, #contact {
+    margin-top: 160px;
+}
+
+#header .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.jumbotron {
+    padding: 5rem;
+    color: $color-white;
+    background-color: rgba($color-primary, 0.9);
+    h1 {
+        color: $color-white;
+    }
+    p {
+        font-size: 1.25em;
+    }
+    @media #{$device-xxl} {
+        p {
+            font-size: 1.5em;
+        }
+    }
+    .cta {
+        font-size: 24px;
+        width: 50%;
+        margin: 40px auto 0;
+        padding: 16px 24px;
+    }
+    figcaption {
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+        text-align: center;
+        padding-top: 12px;
+        a {
+            color: $color-white;
+            text-decoration: underline;
+        }
+    }
+}
+
+img.about-me {
+    border-radius: 50%;
+    -webkit-filter: grayscale(60%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+    filter: grayscale(60%);
+}
+
+.about-copy p {
+    margin-right: 40px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #C6C9D5;
+    color: #fff;
+    font-size: 12px;
+}
+
+footer p {
+    margin-bottom: 0;
+}

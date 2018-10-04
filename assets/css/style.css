@@ -1,3 +1,117 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display");
+html {
+  background: linear-gradient(rgba(23, 104, 151, 0.2), rgba(23, 104, 151, 0.2)), url("../images/skyline-background.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-blend-mode: color-burn; }
 
+body {
+  background-color: transparent;
+  color: #130707;
+  font-family: 'Open Sans', sans-serif; }
+
+h1, h2, h3, h4, h5, h6, .navbar-nav {
+  font-family: 'Playfair Display', serif;
+  color: #176897; }
+
+h2 {
+  margin-bottom: 36px; }
+  @media (min-width: 1200px) {
+    h2 {
+      font-size: 3rem; } }
+
+@media (min-width: 1400px) {
+  p {
+    font-size: 1.25em; } }
+
+a {
+  color: #176897; }
+
+.btn-primary {
+  background-color: #176897;
+  border-color: #176897; }
+
+.btn-secondary {
+  background-color: #377c40;
+  border-color: #377c40; }
+
+.btn-outline-white {
+  color: #f1f1f1;
+  background-color: transparent;
+  background-image: none;
+  border-color: #f1f1f1; }
+  .btn-outline-white:hover {
+    background-color: #f1f1f1;
+    color: #176897; }
+
+.nav-offset {
+  height: 56px; }
+
+#header .main-header, #about-me, #portfolio, #contact {
+  background-color: rgba(241, 241, 241, 0.85); }
+  @media (min-width: 768px) {
+    #header .main-header, #about-me, #portfolio, #contact {
+      padding: 80px 125px; } }
+
+footer {
+  padding: 16px 125px; }
+
+#header, #about-me, #portfolio {
+  margin-bottom: 160px; }
+
+#header, #about-me, #portfolio, #contact {
+  margin-top: 160px; }
+
+#header .row {
+  margin-left: 0;
+  margin-right: 0; }
+
+.jumbotron {
+  padding: 5rem;
+  color: #f1f1f1;
+  background-color: rgba(23, 104, 151, 0.9); }
+  .jumbotron h1 {
+    color: #f1f1f1; }
+  .jumbotron p {
+    font-size: 1.25em; }
+  @media (min-width: 1400px) {
+    .jumbotron p {
+      font-size: 1.5em; } }
+  .jumbotron .cta {
+    font-size: 24px;
+    width: 50%;
+    margin: 40px auto 0;
+    padding: 16px 24px; }
+  .jumbotron figcaption {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    text-align: center;
+    padding-top: 12px; }
+    .jumbotron figcaption a {
+      color: #f1f1f1;
+      text-decoration: underline; }
+
+img.about-me {
+  border-radius: 50%;
+  -webkit-filter: grayscale(60%);
+  /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(60%); }
+
+.about-copy p {
+  margin-right: 40px; }
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #C6C9D5;
+  color: #fff;
+  font-size: 12px; }
+
+footer p {
+  margin-bottom: 0; }
 
 /*# sourceMappingURL=style.css.map */
