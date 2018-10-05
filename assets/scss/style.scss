@@ -13,7 +13,7 @@ $color-white: rgb(241, 241, 241);
 $color-black: rgb(19, 7, 7);
 
 $device-sm: '(min-width: 576px)';
-$device-md: '(min-width: 768px)';
+$device-lg: '(min-width: 768px)';
 $device-lg: '(min-width: 992px)';
 $device-xl: '(min-width: 1200px)';
 $device-xxl: '(min-width: 1400px)';
@@ -59,6 +59,10 @@ p {
 
 a {
     color: $color-primary;
+    transition: color 0.2s ease-out;
+    &:hover {
+        color: $color-secondary;
+    }
 }
 
 .btn-primary {
@@ -87,13 +91,11 @@ a {
 
 #header .main-header, #about-me, #portfolio, #contact {
     background-color: rgba($color-white, 0.85);
-    @media #{$device-md} {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    @media #{$device-lg} {
         padding: 80px 125px;
     }
-}
-
-footer {
-    padding: 16px 125px;
 }
 
 #header, #about-me, #portfolio {
@@ -110,7 +112,7 @@ footer {
 }
 
 .jumbotron {
-    padding: 5rem;
+    padding: 1rem;
     color: $color-white;
     background-color: rgba($color-primary, 0.9);
     h1 {
@@ -126,7 +128,6 @@ footer {
     }
     .cta {
         font-size: 24px;
-        width: 50%;
         margin: 40px auto 0;
         padding: 16px 24px;
     }
@@ -140,16 +141,91 @@ footer {
             text-decoration: underline;
         }
     }
+    .btn-outline-white {
+        border-width: 4px;
+    }
+    @media #{$device-lg} {
+        padding: 5rem;
+        .cta {
+            width: 50%;
+        }
+    }
+}
+
+img.laptop {
+    max-width: 325px;
+    display: block;
+    margin: auto;
+}
+
+.about-copy p {
+    @media #{$device-lg} {
+        margin-right: 40px;
+    }
 }
 
 img.about-me {
     border-radius: 50%;
     -webkit-filter: grayscale(60%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
     filter: grayscale(60%);
+    max-width: 325px;
+    display: block;
+    margin: auto;
 }
 
-.about-copy p {
-    margin-right: 40px;
+.linkedin-button {
+    max-width: 350px;
+    margin-bottom: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    @media #{$device-lg} {
+        margin-bottom: 0;
+    }
+}
+
+#portfolio h3 {
+    font-family: 'Open Sans', sans-serif;
+    color: $color-black;
+    font-size: 1.35rem;
+    @media #{$device-lg} {
+        font-size: 1.75rem;
+    }
+}
+
+.portfolio-links {
+    width: 50%;
+    margin: 24px auto 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+#contact {
+    h3 {
+        font-family: 'Open Sans', sans-serif;
+        color: $color-black;
+    }
+    a {
+        color: $color-black;
+        text-decoration: underline;
+        transition: all 0.2s ease-out;
+        &:hover {
+            color: $color-secondary;
+        }
+    }
+}
+
+.contact-info {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media #{$device-lg} {
+        flex-direction: row;
+    }
+}
+
+.footer-offset {
+    height: 68px;
 }
 
 footer {
@@ -160,8 +236,25 @@ footer {
     background-color: #C6C9D5;
     color: #fff;
     font-size: 12px;
+    @media #{$device-lg} {
+        padding: 8px 125px;
+    }
 }
 
 footer p {
     margin-bottom: 0;
+}
+
+.footer-links {
+    text-align: right;
+    a {
+        color: $color-secondary;
+        transition: color 0.2s ease-out;
+        &:hover {
+            color: $color-primary;
+        }
+    }
+    i:first-child {
+        margin-right: 16px;
+    }
 }

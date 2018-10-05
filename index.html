@@ -9,20 +9,24 @@
     <!-- Bootstrap Styling -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
     <!-- Custom Styling -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 </head>
 <body>
 
     <!-- Navigation -->
     <nav class="navbar navbar-light bg-light fixed-top">
-        <div class="container-fluid mx-5">
+        <div class="container-fluid mx-lg-5">
             <a href="#" class="navbar-brand">Geoff Peel</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavigation" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="mainNavigation">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav text-right mt-3">
                     <li class="nav-item"><a href="#about-me">About</a></li>
                     <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
                     <li class="nav-item"><a href="#contact">Contact</a></li>
@@ -36,21 +40,21 @@
 
     <!-- Jumbotron -->
     <div class="container-fluid">
-        <div class="jumbotron my-5 mx-5">
+        <div class="jumbotron my-2 my-lg-5 mx-lg-5">
             <div class="row">
-                <div class="col-md-6 order-md-2">
+                <div class="col-lg-6 order-lg-2">
                     <figure>
-                        <a href="" target="_blank"><img src="assets/images/header-img-example.png" class="img-fluid" /></a>
-                        <figcaption><a href="" target="_blank">Gazelles Coaches</a> Web Development Project</figcaption>
+                        <a href="https://coaches.scalingup.com/" target="_blank"><img src="assets/images/header-img-example.png" class="img-fluid laptop" /></a>
+                        <figcaption><a href="https://coaches.scalingup.com/" target="_blank">Gazelles Coaches</a> Web Development Project</figcaption>
                     </figure>
                 </div>
-                <div class="col-md-6 order-md-1">
-                    <h1 class="display-4 mb-5">Front-end Development,<br>Digital Consulting</h1>
-                    <p class=" mb-3 mr-5">I work with entrepreneurs, consultants, and small companies to establish their digital footprint.</p>
-                    <p class="mr-5">As a web developer and inbound marketer, let me create a multi-layered approach that attracts users and creates a memorable online experience for your company.</p>
+                <div class="col-lg-6 order-lg-1 mt-4 mt-lg-0">
+                    <h1 class="display-lg-4 mb-lg-5">Front-end Development,<br>Digital Consulting</h1>
+                    <p class=" mb-3 mr-lg-5">I work with entrepreneurs, consultants, and small companies to establish their digital footprint.</p>
+                    <p class="mr-lg-5">As a web developer and inbound marketer, let me create a multi-layered approach that attracts users and creates a memorable online experience for your company.</p>
                 </div>
-                <div class="col-12 order-md-3">
-                        <a href="#" class="btn btn-block btn-outline-white cta">Let's Connect</a>
+                <div class="col-12 order-lg-3">
+                    <a href="#contact" class="btn btn-block btn-outline-white cta">Let's Connect</a>
                 </div>
             </div>
         </div>
@@ -60,10 +64,11 @@
     <section id="about-me" class="">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-4 order-md-2">
+                <div class="col-lg-4 order-lg-2">
                     <img src="assets/images/geoffrey-peel-headshot.jpg" class="img-fluid about-me" alt="">
+                    <a href="https://www.linkedin.com/in/geoffpeel/" target="_blank" class="mt-5 btn btn-secondary btn-block linkedin-button">Connect on <i class="fab fa-linkedin-in"></i></a>
                 </div>
-                <div class="col-md-8 about-copy">
+                <div class="col-lg-8 about-copy">
                     <h2>About Me</h2>
                     <p>Forbes Magazine calls Fishtown, Philadelphia the <a href="https://www.forbes.com/sites/petertaylor/2018/05/02/how-fishtown-philadelphia-became-americas-hottest-new-neighborhood/#67f195c732e5" target="_blank">“Hottest New Neighborhood”</a> - and while I agree that it's a great place, I just call it home.</p>
                     <p>As a former freelance Producer for video content, a Project Manager at a boutique digital marketing agency, and an Executive Assistant at a production company, I enjoy collaborating with others to make quality content.</p>
@@ -80,20 +85,45 @@
             <div class="row">
                 <div class="col-sm-12">
                     <h2>Portfolio</h2>
+                    <p class="mb-5">Below are an assortment of projects that I've done for the Penn LPS Coding Boot Camp:</p>
                 </div>
             </div>
             <div class="row no-gutters">
-                <div class="col-4">
-                    <img src="assets/images/make-it-order-it.jpg" alt="Make it Order it Preview" class="img-fluid">
-                    <h3 class="text-center mt-3">Make it/Order it</h1>
+                <div class="col-sm-4 mb-sm-0 mb-5">
+                    <h3 class="text-center mb-3">Make it/Order it</h1>
+                    <a href="https://mhmeluskey.github.io/groupproject1/" target="_blank"><img src="assets/images/make-it-order-it.jpg" alt="Make it Order it Preview" class="img-fluid"></a>
+                    <div class="portfolio-links">
+                        <a href="https://github.com/mhmeluskey/groupproject1" target="_blank">
+                            <i class="fab fa-github fa-3x"></i>
+                        </a>
+                        <a href="https://mhmeluskey.github.io/groupproject1/" target="_blank">
+                            <i class="far fa-file-code fa-3x"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="col-4">
-                    <img src="assets/images/word-guess-game-display-image.png" alt="Word Guess Game Preview" class="img-fluid">
-                    <h3 class="text-center mt-3">Word Guess Game</h1>
+                <div class="col-sm-4 mb-sm-0 mb-5">
+                    <h3 class="text-center mb-3">Word Guess Game</h1>
+                    <a href="https://github.com/gkpeel/Word-Guess-Game" target="_blank"><img src="assets/images/word-guess-game-display-image.png" alt="Word Guess Game Preview" class="img-fluid"></a>
+                    <div class="portfolio-links">
+                        <a href="https://github.com/gkpeel/Word-Guess-Game" target="_blank">
+                            <i class="fab fa-github fa-3x"></i>
+                        </a>
+                        <a href="https://gkpeel.github.io/Word-Guess-Game/" target="_blank">
+                            <i class="far fa-file-code fa-3x"></i>
+                        </a>
+                    </div>
                 </div>
-                <div class="col-4">
-                    <img src="assets/images/marvel-trivia-game.png" alt="Marvel Trivia Game Preview" class="img-fluid">
-                    <h3 class="text-center mt-3">Marvel Trivia Game</h1>
+                <div class="col-sm-4 mb-sm-0 mb-5">
+                    <h3 class="text-center mb-3">Marvel Trivia Game</h1>
+                    <a href="https://github.com/gkpeel/TriviaGame" target="_blank"><img src="assets/images/marvel-trivia-game.png" alt="Marvel Trivia Game Preview" class="img-fluid"></a>
+                    <div class="portfolio-links">
+                        <a href="https://github.com/gkpeel/TriviaGame" target="_blank">
+                            <i class="fab fa-github fa-3x"></i>
+                        </a>
+                        <a href="https://gkpeel.github.io/TriviaGame/" target="_blank">
+                            <i class="far fa-file-code fa-3x"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
             </div>
@@ -102,29 +132,35 @@
 
     <!-- Contact Seciton -->
     <section id="contact">
-        <div class="row">
-            <div class="col-sm-12">
-                <h2>Contact</h2>
-                <h3>Philadelphia, PA - Fishtown</h3>
-                <h3><a href="mailto:gkpeel@gmail.com">gkpeel@gmail.com</a></h3>
-                <h3>908.812.4012</h3>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>Contact</h2>
+                    <div class="contact-info">
+                        <h3>Philadelphia, PA - Fishtown</h3>
+                        <h3><a href="mailto:gkpeel@gmail.com">gkpeel@gmail.com</a></h3>
+                        <h3>908.812.4012</h3>
+                    </div>
+                </div>
+                <div class="col-sm-8"></div>
+                <div class="col-sm-4"></div>
             </div>
-            <div class="col-sm-8"></div>
-            <div class="col-sm-4"></div>
         </div>
     </section>
     </div>
+
+    <div class="footer-offset"></div>
 
     <!-- Fixed footer -->
     <footer>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-4">
-                    <p>&copy; 2018 geoff peel, inc.</p>
+                <div class="col-4 d-flex">
+                    <p class="mt-auto">&copy; 2018 geoff peel, inc.</p>
                 </div>
-                <div class="col-8">
-                    <i class="fab fa-github"></i>
-                    <i class="fab fa-linkedin-in"></i>
+                <div class="col-8 footer-links">
+                    <a href="https://github.com/gkpeel" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                    <a href="https://www.linkedin.com/in/geoffpeel/" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a>
                 </div>
             </div>
         </div>

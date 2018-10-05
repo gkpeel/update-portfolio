@@ -27,7 +27,10 @@ h2 {
     font-size: 1.25em; } }
 
 a {
-  color: #176897; }
+  color: #176897;
+  transition: color 0.2s ease-out; }
+  a:hover {
+    color: #377c40; }
 
 .btn-primary {
   background-color: #176897;
@@ -50,13 +53,12 @@ a {
   height: 56px; }
 
 #header .main-header, #about-me, #portfolio, #contact {
-  background-color: rgba(241, 241, 241, 0.85); }
-  @media (min-width: 768px) {
+  background-color: rgba(241, 241, 241, 0.85);
+  padding-top: 32px;
+  padding-bottom: 32px; }
+  @media (min-width: 992px) {
     #header .main-header, #about-me, #portfolio, #contact {
       padding: 80px 125px; } }
-
-footer {
-  padding: 16px 125px; }
 
 #header, #about-me, #portfolio {
   margin-bottom: 160px; }
@@ -69,7 +71,7 @@ footer {
   margin-right: 0; }
 
 .jumbotron {
-  padding: 5rem;
+  padding: 1rem;
   color: #f1f1f1;
   background-color: rgba(23, 104, 151, 0.9); }
   .jumbotron h1 {
@@ -81,7 +83,6 @@ footer {
       font-size: 1.5em; } }
   .jumbotron .cta {
     font-size: 24px;
-    width: 50%;
     margin: 40px auto 0;
     padding: 16px 24px; }
   .jumbotron figcaption {
@@ -92,15 +93,76 @@ footer {
     .jumbotron figcaption a {
       color: #f1f1f1;
       text-decoration: underline; }
+  .jumbotron .btn-outline-white {
+    border-width: 4px; }
+  @media (min-width: 992px) {
+    .jumbotron {
+      padding: 5rem; }
+      .jumbotron .cta {
+        width: 50%; } }
+
+img.laptop {
+  max-width: 325px;
+  display: block;
+  margin: auto; }
+
+@media (min-width: 992px) {
+  .about-copy p {
+    margin-right: 40px; } }
 
 img.about-me {
   border-radius: 50%;
   -webkit-filter: grayscale(60%);
   /* Ch 23+, Saf 6.0+, BB 10.0+ */
-  filter: grayscale(60%); }
+  filter: grayscale(60%);
+  max-width: 325px;
+  display: block;
+  margin: auto; }
 
-.about-copy p {
-  margin-right: 40px; }
+.linkedin-button {
+  max-width: 350px;
+  margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto; }
+  @media (min-width: 992px) {
+    .linkedin-button {
+      margin-bottom: 0; } }
+
+#portfolio h3 {
+  font-family: 'Open Sans', sans-serif;
+  color: #130707;
+  font-size: 1.35rem; }
+  @media (min-width: 992px) {
+    #portfolio h3 {
+      font-size: 1.75rem; } }
+
+.portfolio-links {
+  width: 50%;
+  margin: 24px auto 0;
+  display: flex;
+  justify-content: space-around; }
+
+#contact h3 {
+  font-family: 'Open Sans', sans-serif;
+  color: #130707; }
+#contact a {
+  color: #130707;
+  text-decoration: underline;
+  transition: all 0.2s ease-out; }
+  #contact a:hover {
+    color: #377c40; }
+
+.contact-info {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  @media (min-width: 992px) {
+    .contact-info {
+      flex-direction: row; } }
+
+.footer-offset {
+  height: 68px; }
 
 footer {
   position: fixed;
@@ -110,8 +172,21 @@ footer {
   background-color: #C6C9D5;
   color: #fff;
   font-size: 12px; }
+  @media (min-width: 992px) {
+    footer {
+      padding: 8px 125px; } }
 
 footer p {
   margin-bottom: 0; }
+
+.footer-links {
+  text-align: right; }
+  .footer-links a {
+    color: #377c40;
+    transition: color 0.2s ease-out; }
+    .footer-links a:hover {
+      color: #176897; }
+  .footer-links i:first-child {
+    margin-right: 16px; }
 
 /*# sourceMappingURL=style.css.map */
