@@ -105,6 +105,9 @@ img.laptop {
   max-width: 325px;
   display: block;
   margin: auto; }
+  @media (min-width: 1200px) {
+    img.laptop {
+      max-width: 100%; } }
 
 @media (min-width: 992px) {
   .about-copy p {

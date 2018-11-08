@@ -156,6 +156,9 @@ img.laptop {
     max-width: 325px;
     display: block;
     margin: auto;
+    @media #{$device-xl} {
+        max-width: 100%;
+    }
 }
 
 .about-copy p {
